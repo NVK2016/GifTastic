@@ -11,9 +11,9 @@ User clicks one of the still GIPHY images, the gif should animate. If the user c
 * Javascript & Jquery - hold the main app logic that would help gettting dynamic data from the web. 
 * AJAX - used to get a response for the give API Url. 
 
-#Screenshots: 
+### Screenshots: 
 
 
 
 ## Link to the Giftastic Site 
-<a href="#">Giftastic Site </a>
+<a href="https://nvk2016.github.io/GifTastic/">Giftastic Site </a>
