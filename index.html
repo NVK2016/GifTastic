@@ -9,7 +9,7 @@
     <!--Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Love+Ya+Like+A+Sister" rel="stylesheet">
     <!-- Animation CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!--Bootstrap Link-->
@@ -18,27 +18,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Will hold all the buttons that are dynamically created -->
-        <div id="gif-buttons" class="btn-info">
     
+    <div class="container">
+        <h2 class="txt-center">PIXAR DISNEY MOVIES</h2>
+        <!-- Will hold all the buttons that are dynamically created -->
+        <div class="row m-5"> 
+            <br /> 
+        <div id="gif-buttons" class="col-9">
+
         </div>
-        <hr />
         <!-- User can new gifs  -->
-        <div>
-            <label for="topic-input">Add a topic</label>
-            <input type="text" id="topic-input"><br>
-            <button id="add-gifs" class="btn-success" value="Submit">Submit</button>
+        <br />
+        <div class="card col-3" style="width: 18rem;">
+            <form id="topic-id" class="card-body">
+                <label for="topic-input" >Add a movie</label>
+                <input type="text" id="topic-input"><br />
+                <button id="add-gifs" class="btn-success m-2" value="Submit">Submit</button>
+            </form>
         </div>
+    </div>
         <hr />
         <!-- Div that displays all gif images  -->
         <div id="gifs-appear-here">
-    
+
         </div>
     </div>
-   <!-- JQUERY FILE  -->
+    <!-- JQUERY FILE  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -46,7 +53,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <!-- Link to javascript file -->
+    <!-- Link to javascript file -->
     <script src="assets/javascript/giftastic.js"> </script>
 </body>
 

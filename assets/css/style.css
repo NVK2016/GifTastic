@@ -1,4 +1,37 @@
-#gifImages{
-    border: dotted 2px solid; 
-    border-color: orange; 
+.gifTastic{
+    font-family: 'Fredericka the Great', cursive;
 }
+
+body {
+
+    /* https://cssgradient.io/ */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(127,149,182,1) 10%, rgba(0,123,255,1) 88%);
+
+    
+}
+h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    padding-top: 20px;
+    color: whitesmoke; 
+    text-align: center; 
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    }
+  }
+
+  #gifs-appear-here{
+    /* animation: pulse 5s infinite; */
+  }
+
+  .gif-animation {
+      margin-left : 25%; 
+      margin-right : 25%; 
+  }

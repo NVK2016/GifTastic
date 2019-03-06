@@ -19,7 +19,7 @@ $(document).ready(function() {
         for(var i=0; i< topics.length; i++)
         {
           //Create button 
-          var gifButton = $("<button>");
+          var gifButton = $("<button class='btn-outline-success m-3'>");
           gifButton.addClass("gifTastic");  //its helpful when we use event listeners 
           //Add movie name 
           gifButton.attr("data-name", topics[i]);  
@@ -34,7 +34,7 @@ $(document).ready(function() {
   function displayGifInfo() {
 
     //CLear previous GIF IMAGES 
-    $("#gifs-appear-here").empty();
+    // $("#gifs-appear-here").empty();
 
     //Take the GIF NAME AS A PARAMETER 
     var gifTopic = $(this).attr("data-name");
@@ -47,10 +47,10 @@ $(document).ready(function() {
       method: "GET"
     }).then(function (response) {
       var results = response.data;
-      // console.log(results);
+      console.log(results);
 
       for (var i = 0; i < results.length; i++) {
-        var newGifDiv = $("<div>");
+        var newGifDiv = $("<div id='gif-"+ i +"'>");
 
         var rating = results[i].rating;
 
