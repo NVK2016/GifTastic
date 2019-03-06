@@ -18,29 +18,58 @@
 </head>
 
 <body>
-    
+
     <div class="container">
-        <h2 class="txt-center">PIXAR DISNEY MOVIES</h2>
-        <!-- Will hold all the buttons that are dynamically created -->
-        <div class="row m-5"> 
-            <br /> 
-        <div id="gif-buttons" class="col-9">
+        <div>
+            <h2>Choose an option to Giftastic / API Search </h2>
+            <center><button class="btn btn-success" id="btn-pixar">Pixar Giphy Search?</button></center> <br />
+            <center><button class="btn btn-warning mb-3" id="btn-artist">Bands in Town Sarch?</button></center>
+        </div>
+        <div id="pixarDisplay">
+            <h2 class="txt-center">PIXAR Gifphy SEARCH</h2>
+            <div class="row m-5">
+                <br />
+                <!-- Will hold all the buttons that are dynamically created -->
+                <div id="gif-buttons" class="col-md-9">
 
+                </div>
+                <!-- User can new gifs topics -->
+                <br />
+                <div class="card col-md-3" style="width: 18rem;">
+                    <form id="topic-id" class="card-body">
+                        <label for="topic-input">Add a pixar movie</label>
+                        <input type="text" id="topic-input"><br />
+                        <button id="add-gifs" class="btn-success m-2" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Div that displays all gif images  -->
+            <div id="gifs-appear-here">
+
+            </div>
         </div>
-        <!-- User can new gifs  -->
-        <br />
-        <div class="card col-3" style="width: 18rem;">
-            <form id="topic-id" class="card-body">
-                <label for="topic-input" >Add a movie</label>
-                <input type="text" id="topic-input"><br />
-                <button id="add-gifs" class="btn-success m-2" value="Submit">Submit</button>
-            </form>
-        </div>
-    </div>
         <hr />
-        <!-- Div that displays all gif images  -->
-        <div id="gifs-appear-here">
-
+        <div id="bandDisplay">
+            <h2 class="txt-center">BANDS In Town SEARCH</h2>
+            <!-- Will hold all the buttons that are dynamically created -->
+            <div class="row m-5">
+                <div class="card col-md-3" style="width: 18rem;">
+                    <!-- Artist Select Box -->
+                    <form id="artist-form" class="card-body">
+                        <!-- Label for Text Box -->
+                        <label for="artist-input">Choose Your Artist</label>
+                        <!-- Text Input Box -->
+                        <input type="text" id="artist-input"><br>
+                        <!-- Submit Button -->
+                        <input id="select-artist" class="btn-success m-2" type="submit" value="GO!">
+                    </form>
+                    
+                </div>
+                <!-- Artist Information -->
+                <div id="artist-div"  class="col-md-6">
+                        Adele 
+                </div>
+            </div>
         </div>
     </div>
     <!-- JQUERY FILE  -->
