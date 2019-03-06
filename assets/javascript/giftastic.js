@@ -197,14 +197,15 @@ $(document).ready(function() {
     
     //MAIN PROCESS
     // -----------------
-    $("#pixarDisplay").hide(); 
+    //Show GIFPHY by default 
+    $("#pixarDisplay").show(); 
     $("#bandDisplay").hide(); 
 
       //On click of start button the game starts 
     $('#btn-pixar').click(function () {
       console.log("Pixar Button clicked");
 
-      $('#btn-pixar').hide();
+      // $('#btn-pixar').hide();
       $('#btn-artist').show();
 
       $("#pixarDisplay").show(); 
