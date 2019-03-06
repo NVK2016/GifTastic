@@ -46,7 +46,9 @@ $(document).ready(function() {
 
     //Take the GIF NAME AS A PARAMETER 
     var gifTopic = $(this).attr("data-name");
+    console.log(gifTopic); 
 
+    if ( gifTopic !== null && gifTopic !== "" ){ 
     //RETURNS 10 items for the selected topic
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&api_key=4aCPsmsCn0T77A2YUnVUvvAFYd6t9it8&limit=10";
 
@@ -89,6 +91,11 @@ $(document).ready(function() {
         }
       }
     });
+  }
+  else {
+    alert("Cannot leave topic blank , please enter a pixar movie name"); 
+    $(this).focus(); 
+  }
 
   }
 
@@ -104,8 +111,14 @@ $(document).ready(function() {
       // The movie from the textbox is then added to our array
       topics.push(topic);
 
+      if ( topic !== null & topic !== "") {
       // Calling renderButtons which handles the processing of our gif array
       renderButtons();
+      }
+      else {
+        alert("Please enter a topic name, to add a button"); 
+        $("#topic-input").focus(); 
+      }
     });
 
      //ON BUTTON CLICK ANIMATE OR STILL THE GIF IMAGES 
