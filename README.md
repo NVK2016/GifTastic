@@ -21,7 +21,12 @@ Highlights:
 * AJAX - used to get a response for the give API Url which grabs all the gifs/data  related to the topic chosen or entered.  
 
 ### Screenshots: 
-![alt txt](https://)
+<em>Default Screen Layout</em>
+![By default](https://github.com/NVK2016/GifTastic/blob/master/Screenshots/Default-Giftastic-Site.png)
+<em>Giphy API Data </em>
+![Giphy API Data](https://github.com/NVK2016/GifTastic/blob/master/Screenshots/Giphy-Search-API.png)
+<em> BANDS Api DATA </em>
+![Bands API Data](https://github.com/NVK2016/GifTastic/blob/master/Screenshots/BandsInTownAPI.png)
 
 
 ## Link to the Giftastic Site 
