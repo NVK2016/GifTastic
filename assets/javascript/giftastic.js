@@ -164,14 +164,14 @@ $(document).ready(function() {
        
             // Using jQuery, append the following to the #artist-div :
             // The artist's name
-            $("#artist-div").append("<h5> Artist Name: " + response.name + "</h5>"); 
+            $("#artist-div").append("<h5 class='text-light' > Artist Name: " + response.name + "</h5>"); 
             // The artists thumbnail image
-            var newImg = $("<br /> <img class='gif-animation' src="+ response.thumb_url+" /> <br/>"); 
+            var newImg = $("<br /> <img  src="+ response.thumb_url+" /> <br/>"); 
             $("#artist-div").append(newImg); 
             // The number of fans tracking this artist
-            $("#artist-div").append("<p class='txt-light'> Number of Fans: " + response.tracker_count + "</p>"); 
+            $("#artist-div").append("<p class='text-light'> Number of Fans: " + response.tracker_count + "</p>"); 
             // The number of upcoming events for this artist
-            $("#artist-div").append("<p class='txt-light'> Upcoming Events: " + response.upcoming_event_count+ "</p>"); 
+            $("#artist-div").append("<p class='text-light'> Upcoming Events: " + response.upcoming_event_count+ "</p>"); 
             // A link to the bandsintown url for this artist
             // Note: Append actual HTML elements, not just text
             $("#artist-div").append("<a id='artist-link' href='"+response.url+"' > Click HERE to track events </a>"); 
