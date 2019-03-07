@@ -16,7 +16,7 @@ h2 {
     font-family: 'Love Ya Like A Sister', cursive;
     padding-top: 20px;
     color: whitesmoke; 
-    /* text-align: center;  */
+    text-align: center; 
     animation: pulse 5s infinite;
 }
 
