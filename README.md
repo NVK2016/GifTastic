@@ -8,11 +8,11 @@ User can add additional buttons of thier liking to search the giphy api images.
 For Bands In Town API Search 
     the user has to enter the artist name to display relevant data related the artist. 
 
-Highlights: 
-* By default Giphy will be displayed  
-* user can even search  BAnds in Town API  by clicking the button 
+<strong>Highlights:</strong>
+1.  By default Giphy will be displayed  
+2. <em style='color:maroon;'>Bonus: </em> User can even search  for the details about his/her Band in Town API  by clicking the <button style='color:blue; background-color:yellow;'>Bands in Town Search?</button> 
 
-###Built With: 
+### Built With: 
 * GIPHY API - to display all the animated gifs based on the selected topic. 
 * BANDS IN TOWN API 
 * HTML - displays the website 
